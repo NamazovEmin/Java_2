@@ -1,0 +1,15 @@
+# Project exclude paths
+/Lesson_1/target/
+/Lesson_1/Lesson_1.iml
+/Java_2.iml
+/.idea
+/target
+Lesson_1/target
+Lesson_2/target
+Lesson_3/target
+Lesson_4/target
+Lesson_5/target
+Lesson_6/target
+Lesson_7/target
+Lesson_8/target
+Lesson_9/target
