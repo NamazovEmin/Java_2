@@ -13,7 +13,6 @@ public class Wall implements Obstacle {
         this.hight = hight;
     }
 
-
     @Override
     public boolean doAction(Participant participant) {
         return participant.jump(hight);

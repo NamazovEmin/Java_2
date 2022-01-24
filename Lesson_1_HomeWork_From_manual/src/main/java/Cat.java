@@ -32,11 +32,6 @@ public class Cat implements Participant {
     }
 
     @Override
-    public boolean swim(int value) {
-        return false;
-    }
-
-    @Override
     public String toString() {
         return "Cat{" +
                 "heightJumpCat=" + heightJumpCat +
