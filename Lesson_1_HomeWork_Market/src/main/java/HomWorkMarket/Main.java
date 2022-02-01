@@ -8,7 +8,11 @@ public class Main {
         Buyer buyer = createBuyer();
         buyer.choiceYourShopping();
         System.out.println(buyer.requiredShoppingList);
-        System.out.println(buyer.shoppedList);
+        DataBase dataBase = DataBase.getInstance();
+        dataBase.createTableShoppedProductList();
+        dataBase.InsertProductInTableProductInDataBase(buyer);
+        dataBase.selectFrom();
+        dataBase.deleteTableShoppedProduct();
     }
 
 

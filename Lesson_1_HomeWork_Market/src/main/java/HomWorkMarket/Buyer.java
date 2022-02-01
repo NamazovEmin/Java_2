@@ -74,4 +74,20 @@ public class Buyer extends User {
 
 
     }
+
+    public List<Product> getRequiredShoppingList() {
+        return requiredShoppingList;
+    }
+
+    public void setRequiredShoppingList(List<Product> requiredShoppingList) {
+        this.requiredShoppingList = requiredShoppingList;
+    }
+
+    public List<Product> getShoppedList() {
+        return shoppedList;
+    }
+
+    public void setShoppedList(List<Product> shoppedList) {
+        this.shoppedList = shoppedList;
+    }
 }
