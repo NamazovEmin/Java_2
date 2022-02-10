@@ -25,8 +25,6 @@ class DataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         return users;
     }
 
