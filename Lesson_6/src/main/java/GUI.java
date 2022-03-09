@@ -2,8 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+
 
 public class GUI extends JFrame {
     private JTextField messageTextField;
@@ -45,13 +44,6 @@ public class GUI extends JFrame {
             }
         });
 
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosing(e);
-                client.closeConnection();
-            }
-        });
         setVisible(true);
     }
 }
