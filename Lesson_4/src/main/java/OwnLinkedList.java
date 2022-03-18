@@ -15,8 +15,8 @@ public class OwnLinkedList<T> {
 
 
 
-    public void addNode(T data) {
-        Node newNode = new Node(data);
+    public void addNode(T newData) {
+        Node newNode = new Node(newData);
         if(head == null) {
             head = newNode;
             tail = newNode;
@@ -65,15 +65,24 @@ public class OwnLinkedList<T> {
             current = current.next;
         }
         current.data = null;
+
     }
 
     public void addNote(int index, T newData) {
+        addNode(newData);
         if (index > size) {
             System.out.println("Индекс больше размера списка");
             return;
         }
-        Node current = head;
 
+        for (int j = 2; j < size-index+1; j++) {
+            Node current = head;
+            for (int i = 1; i <= size - j; i++) {
+                current = current.next;
+            }
+            current.next.data = current.data;
+        }
+        Node current = head;
         for (int i = 1; i <= index; i++) {
             current = current.next;
         }

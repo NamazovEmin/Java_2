@@ -8,7 +8,7 @@ public class OwnLinkedListMain {
         integerOwnLinkedList.addNode(250);
         integerOwnLinkedList.addNode(300);
         integerOwnLinkedList.delete(5);
-        integerOwnLinkedList.addNote(1, 1000);
+        integerOwnLinkedList.addNote(3, 1000);
         integerOwnLinkedList.display();
     }
 }
